@@ -373,4 +373,124 @@ input[type="file"] {
   color: #444;
   line-height: 1.8;
 }
+/* ================= GLOBAL RESPONSIVE FIXES ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= RESPONSIVE NAVBAR ================= */
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: #0A1F44;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ================= RESPONSIVE BANNER ================= */
+
+@media (max-width: 768px) {
+
+  .banner-container {
+    height: 300px;
+  }
+
+  .banner-container img {
+    height: 100%;
+  }
+}
+
+/* ================= RESPONSIVE SECTIONS ================= */
+
+@media (max-width: 768px) {
+
+  .about-section,
+  .contact-section,
+  .hire-section {
+    padding: 60px 15px;
+  }
+
+  .about-section h1,
+  .contact-section h1 {
+    font-size: 28px;
+  }
+
+  .hire-title {
+    font-size: 26px;
+  }
+
+  .about-text,
+  .contact-subtext {
+    font-size: 15px;
+  }
+}
+
+/* ================= RESPONSIVE FOOTER ================= */
+
+@media (max-width: 768px) {
+
+  footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+/* ================= RESPONSIVE STICKY BUTTON ================= */
+
+@media (max-width: 768px) {
+
+  .sticky-hire-btn {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+
 
